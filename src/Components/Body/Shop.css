@@ -1,0 +1,140 @@
+.Shop-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.product-container {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 130px 50px;
+}
+
+.cart-container {
+  width: 20%;
+  background: rgba(255, 153, 0, 0.30);
+  position: relative;
+}
+.fixed {
+  position: fixed;
+  top: 10%;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.clear-btn {
+  margin-bottom: 8px;
+  width: 232px;
+  height: 48px;
+  border-radius: 4px;
+  background: #FF3030;
+  color: #FFF;
+  font-family: Lato;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.085px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+
+}
+
+.clear-btn:hover {
+  background: #d60000;
+}
+
+.clear-btn svg {
+  margin-left: 15px;
+}
+
+.review-btn {
+  margin-top: 8px;
+  width: 232px;
+  height: 48px;
+  border-radius: 4px;
+  background: #FF9900;
+  color: #FFF;
+  font-family: Lato;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.085px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+}
+
+.review-btn:hover {
+  background: #cc7b00;
+}
+
+.review-btn svg {
+  margin-left: 15px;
+
+}
+
+
+
+.cart-container h5 {
+  color: #1C2B35;
+  font-family: Lato;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  color: rgba(0, 98, 255, 0.648);
+
+}
+
+
+@media only screen and  (max-width: 1268px) {
+  .product-container {
+    width: 60%;
+  }
+  .cart-container {
+    width: 30%;
+  }
+}
+@media only screen and  (max-width: 992px) {
+  .product-container {
+    width: 50%;
+  }
+  .cart-container {
+    width: 40%;
+  }
+}
+@media only screen and  (max-width: 692px) {
+  .product-container {
+    width: 40%;
+  }
+  .cart-container {
+    width: 60%;
+  }
+}
+
+@media only screen and  (max-width: 592px) {
+  .Shop-container {
+    display: block;
+  }
+  .product-container {
+    width: 100%;
+    padding: 120px 0;
+  }
+  .cart-container {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .fixed {
+    position: static;
+  }
+}
